@@ -1,0 +1,17 @@
+body{
+  background-color: #bbbbbb;
+}
+
+img{
+  height: 25%;
+  width: 25%;
+}
+
+#header{
+  text-align: center;
+  background-color: #5271d9;
+}
+
+.title{
+  text-align: center;
+}
