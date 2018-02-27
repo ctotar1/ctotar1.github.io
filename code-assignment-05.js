@@ -13,7 +13,7 @@ let projects = [
   project2
 ]
 for (let i = 0; i < projects.lenth; i++) {
-  console.log('project' + i + 'New Orleans' + projects[i].title)
+  console.log('project' + i + 'title' + projects[i].title)
   if (projects[i].hasThumbnail === true) {
   console.log('images/screenshot' + projects[i].id + '.jpg')
 }
