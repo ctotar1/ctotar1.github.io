@@ -10,7 +10,7 @@ let projectArray = [
 let projectObject = {
   id: 1,
   url: 'https://ctotar1.github.io',
-  title: 'Chris Website'
+  title: 'Chris Website',
   desc: 'CT',
   thumb: true,
   keywords: [
