@@ -1,5 +1,5 @@
-function describeBaseball (baseball) {
-  let description = 'Astros ' + baseball + ' is good '
+function describeBaseball (mybaseball) {
+  let description = 'The ' + mybaseball + ' are good '
   return description
 }
 let myBaseball = 'Astros'
