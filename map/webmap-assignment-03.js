@@ -24,14 +24,12 @@ let myGreenIcon = L.icon({
   iconURL: 'tigerss.png',
   iconSize: [38, 95],
   iconAnchor: [22, 94],
-  popupAnchr: [-3, -76]
+  popupAnchor: [-3, -76]
 })
-
+let myMarker = L.marker([51.5, -0.09]).addTo(mymap);
 let myMarker = L.marker([51.5, -0.09], {icon: myGreenIcon}).addTo(map);
-
 let myStyle = {
   color: 'blue'
   fillColor: 'purple'
 }
-
 let myPolygon = L.polygon(myCoords, myStyle).addTo(mymap)
