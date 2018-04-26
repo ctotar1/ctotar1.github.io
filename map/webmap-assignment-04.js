@@ -1,9 +1,9 @@
-let mymapp = L.map('geojsonone').setView([58.665032419466684, -161.34946898219835], 58.703652797126836);
-L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(mymapp);
+let mymap = L.map('geojsonone').setView([58.665032419466684, -161.34946898219835], 58.703652797126836);
+L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png').addTo(mymap);
 mymap.on('click', function (event) {
   consol.log('click location: ' + event.latlng)
 })
-L.geoJSON(geojsonone).addTo(mymapp)
+L.geoJSON(geojsonone).addTo(mymap)
 function getColor(d) {
   return d > 472568 ? '#fbb4ae' :
          d > 164992 ? '#b3cde3' :
@@ -28,7 +28,7 @@ let myOptions = {
   style: myStyle,
   onEachFeature:myPopup
 }
-L.geoJSON(geojsonone, myOptions).addTo(mymapp);
+L.geoJSON(geojsonone, myOptions).addTo(mymap);
 function myPopup (feature, layer) {
   let name = feature.properties.Name
   layer.bindPopup(name)
